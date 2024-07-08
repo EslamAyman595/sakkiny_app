@@ -156,8 +156,10 @@ class _PersonViewBodyState extends State<PersonViewBody> {
   @override
   void initState() {
     super.initState();
-    nameController = TextEditingController(text: widget.userModel.user?.name ?? '');
-    phoneController = TextEditingController(text: widget.userModel.user?.phoneNumber ?? '');
+    nameController =
+        TextEditingController(text: widget.userModel.user?.name ?? '');
+    phoneController =
+        TextEditingController(text: widget.userModel.user?.phoneNumber ?? '');
   }
 
   @override
@@ -258,7 +260,8 @@ class _PersonViewBodyState extends State<PersonViewBody> {
                         );
                       } else {
                         showToast(
-                          txt: 'Choose image from gallery for update'.tr(context),
+                          txt: 'Choose image from gallery for update'
+                              .tr(context),
                           state: ToastState.ERROR,
                         );
                       }

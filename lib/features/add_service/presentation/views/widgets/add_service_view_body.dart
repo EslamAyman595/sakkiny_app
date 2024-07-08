@@ -209,8 +209,9 @@ class _AddServicesViewBodyState extends State<AddServicesViewBody> {
                       }
                       if (selectedImages.isEmpty) {
                         showToast(
-                            txt: 'Choose from the gallery images that express your services'
-                                .tr(context),
+                            txt:
+                                'Choose from the gallery images that express your services'
+                                    .tr(context),
                             state: ToastState.ERROR);
                       }
                     },

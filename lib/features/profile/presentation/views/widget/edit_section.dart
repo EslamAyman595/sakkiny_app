@@ -11,7 +11,7 @@ class EditSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomContainerBottom(
       onTap: () {
-        GoRouter.of(context).push(AppRouter.kEditView);
+        GoRouter.of(context).push(AppRouter.kUserPropertyView);
       },
       text: 'Edit Your Property'.tr(context),
       firstIcon: Icons.edit_outlined,

@@ -45,7 +45,7 @@ class CustomImageFav extends StatelessWidget {
                   txt: state.changeFavoriteModel.message!,
                   state: ToastState.SUCCESS,
                 );
-              }else{
+              } else {
                 showToast(
                   txt: state.changeFavoriteModel.message!,
                   state: ToastState.SUCCESS,

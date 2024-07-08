@@ -1,4 +1,3 @@
-
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -18,156 +17,139 @@ class CustomServices extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-        ServiceCubit cubit = ServiceCubit.get(context);
+    ServiceCubit cubit = ServiceCubit.get(context);
 
     return InkWell(
-      onTap: () {
-        GoRouter.of(context)
-            .push(AppRouter.kSelectedServicesView, extra: service);
-      },
-      child: Container(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: Colors.black26),
-          color: Colors.white,
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Stack(
-      alignment: Alignment.topRight,
-      children: [
-         CachedNetworkImage(
-              fit: BoxFit.cover,
-                 height: 150,
-                 width: double.infinity,
-              imageUrl: service.images![0].secureUrl!,
-              errorWidget: (context, url, error) => const Center(
-                child: Icon(Icons.error),
-              ),
+        onTap: () {
+          GoRouter.of(context)
+              .push(AppRouter.kSelectedServicesView, extra: service);
+        },
+        child: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(color: Colors.black26),
+              color: Colors.white,
             ),
-        // Image.asset(
-        //   isHome ? AssetsData.getStartD2 : AssetsData.services,
-        //   height: 150,
-        //   width: double.infinity,
-        // ),
-       BlocConsumer<ChangeFavoriteServiceCubit, ChangeFavoriteServiceState>(
-                  listener: (context, state) {
-                if (state is SuccessChangeFavoriteServiceState) {
-                  if (!state.changeFavoriteServiceModel.status!) {
-                    showToast(
-                      txt: state.changeFavoriteServiceModel.message!,
-                      state: ToastState.SUCCESS,
-                    );
-                  }else{
+            child:
+                Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Stack(alignment: Alignment.topRight, children: [
+                CachedNetworkImage(
+                  fit: BoxFit.cover,
+                  height: 150,
+                  width: double.infinity,
+                  imageUrl: service.images![0].secureUrl!,
+                  errorWidget: (context, url, error) => const Center(
+                    child: Icon(Icons.error),
+                  ),
+                ),
+                // Image.asset(
+                //   isHome ? AssetsData.getStartD2 : AssetsData.services,
+                //   height: 150,
+                //   width: double.infinity,
+                // ),
+                BlocConsumer<ChangeFavoriteServiceCubit,
+                    ChangeFavoriteServiceState>(listener: (context, state) {
+                  if (state is SuccessChangeFavoriteServiceState) {
+                    if (!state.changeFavoriteServiceModel.status!) {
                       showToast(
-                      txt: state.changeFavoriteServiceModel.message!,
-                      state: ToastState.SUCCESS,
-                    );
+                        txt: state.changeFavoriteServiceModel.message!,
+                        state: ToastState.SUCCESS,
+                      );
+                    } else {
+                      showToast(
+                        txt: state.changeFavoriteServiceModel.message!,
+                        state: ToastState.SUCCESS,
+                      );
+                    }
                   }
-                       
-
-                }
-              }, builder: (context, state) {
-               
-                 return 
-                 Material(
-                  color: Colors.transparent,
-                  elevation: 5,
-                  shape: const CircleBorder(),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: Colors.grey[300],
-                    ),
-                    child: IconButton(
-                      padding: EdgeInsets.zero,
-                      icon: cubit.favorites[service.id]!
-                          ? const Icon(
-                              Icons.favorite_outlined,
-                              color: kLogoColor,
-                            )
-                          : const Icon(Icons.favorite_border_outlined),
-                      onPressed: () {
-                        ChangeFavoriteServiceCubit.get(context).changeFavoriteServiceItem(
-                          id: service.id!,
-                          context: context,
-                        );
-                      },
-                      
-                    ),
-                  ),
-                );
-              }),
-              
-         
-      ]
-            ),
-            Padding(
-              padding: const EdgeInsets.only(
-                left: 10,
-                top: 10,
-                bottom: 5,
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    service.serviceCategory ?? 'No category',
-                    style: const TextStyle(
-                      fontSize: 14,
-                      height: 1.3,
-                      fontWeight: FontWeight.bold,
-                    ),
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                  Row(
-                    children: [
-                      Expanded(
-                        child: Text(
-                          '${'Beginning from'.tr(context)} ${service.price} ${'LE'.tr(context)}',
-                          style: const TextStyle(
-                            fontSize: 10,
-                            color: kLogoColor,
-                            fontWeight: FontWeight.bold,
-                          ),
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                        ),
+                }, builder: (context, state) {
+                  return Material(
+                    color: Colors.transparent,
+                    elevation: 5,
+                    shape: const CircleBorder(),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Colors.grey[300],
                       ),
-            
-                  Row(
-                    children: [
-                      const Icon(
-                        Icons.location_on_outlined,
-                        color: kLocationColor,
-                        size: 15,
+                      child: IconButton(
+                        padding: EdgeInsets.zero,
+                        icon: cubit.favorites[service.id]!
+                            ? const Icon(
+                                Icons.favorite_outlined,
+                                color: kLogoColor,
+                              )
+                            : const Icon(Icons.favorite_border_outlined),
+                        onPressed: () {
+                          ChangeFavoriteServiceCubit.get(context)
+                              .changeFavoriteServiceItem(
+                            id: service.id!,
+                            context: context,
+                          );
+                        },
                       ),
+                    ),
+                  );
+                }),
+              ]),
+              Padding(
+                padding: const EdgeInsets.only(
+                  left: 10,
+                  top: 10,
+                  bottom: 5,
+                ),
+                child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
                       Text(
-                        service.address ?? 'No address',
+                        service.serviceCategory ?? 'No category',
                         style: const TextStyle(
-                          fontSize: 10,
-                          color: kLogoColor,
+                          fontSize: 14,
+                          height: 1.3,
                           fontWeight: FontWeight.bold,
                         ),
-                        maxLines: 1,
+                        maxLines: 2,
                         overflow: TextOverflow.ellipsis,
                       ),
-                    ],
-                  ),
-                ],
+                      Row(
+                        children: [
+                          Expanded(
+                            child: Text(
+                              '${'Beginning from'.tr(context)} ${service.price} ${'LE'.tr(context)}',
+                              style: const TextStyle(
+                                fontSize: 10,
+                                color: kLogoColor,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              maxLines: 2,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ),
+                          Row(
+                            children: [
+                              const Icon(
+                                Icons.location_on_outlined,
+                                color: kLocationColor,
+                                size: 15,
+                              ),
+                              Text(
+                                service.address ?? 'No address',
+                                style: const TextStyle(
+                                  fontSize: 10,
+                                  color: kLogoColor,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ]),
               ),
-          
-                ]
-          ),
-            ),
-      //     ],
-      // ),
-          ]
-    )
-    )
-    
-    );
+              //     ],
+              // ),
+            ])));
   }
 }

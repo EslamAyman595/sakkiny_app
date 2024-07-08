@@ -8,7 +8,6 @@ import 'package:sakkiny/features/favorite/presentation/manager/fav_cubit/fav_cub
 import 'package:sakkiny/features/favorite/presentation/manager/fav_cubit/fav_state.dart';
 import 'package:sakkiny/features/favorite/presentation/views/widget/grid_view_home_fav.dart';
 
-
 class BlocBuilderFavItem extends StatelessWidget {
   const BlocBuilderFavItem({Key? key}) : super(key: key);
 
@@ -18,8 +17,7 @@ class BlocBuilderFavItem extends StatelessWidget {
       if (state is SuccessFetchFavoriteState) {
         if (state.favModel.properties == null) {
           return CustomErrorWidget(
-            errorMassage:
-                "your favorite list is empty".tr(context),
+            errorMassage: "your favorite list is empty".tr(context),
             color: kLogoColor,
           );
         }

@@ -1,4 +1,3 @@
-
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -8,7 +7,6 @@ import 'package:sakkiny/features/favorite/presentation/manager/change_fav_cubit/
 import 'package:sakkiny/features/favorite/presentation/manager/change_fav_cubit/change_favorite_state.dart';
 import 'package:sakkiny/features/home/data/models/home_model/property.dart';
 import 'package:sakkiny/features/home/presentation/manger/property_cubit/property_cubit.dart';
-
 
 class CustomHomeImage extends StatelessWidget {
   const CustomHomeImage({super.key, required this.property});
@@ -47,11 +45,10 @@ class CustomHomeImage extends StatelessWidget {
                         txt: state.changeFavoriteModel.message!,
                         state: ToastState.SUCCESS,
                       );
-                    }else{
-                       showToast(
-                        txt: state.changeFavoriteModel.message!,
-                        state: ToastState.ERROR
-                      );
+                    } else {
+                      showToast(
+                          txt: state.changeFavoriteModel.message!,
+                          state: ToastState.ERROR);
                     }
                   }
                 },

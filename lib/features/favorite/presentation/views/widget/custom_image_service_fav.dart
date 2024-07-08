@@ -49,39 +49,36 @@ class CustomImageFavService extends StatelessWidget {
             // }
           },
           builder: (context, state) {
-             bool isFavorite = cubit.favorites[service.id] ?? false;
-            return 
-             Material(
-                  color: Colors.transparent,
-                  elevation: 5,
-                  shape: const CircleBorder(),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: Colors.grey[300],
-                    ),
-                    child: IconButton(
-                      padding: EdgeInsets.zero,
-                      icon: isFavorite
-                          ? const Icon(
-                              Icons.favorite_outlined,
-                              color: kLogoColor,
-                            )
-                          : const Icon(Icons.favorite_border_outlined),
-                      onPressed: () {
-                        ChangeFavoriteServiceCubit.get(context).changeFavoriteServiceItem(
-                          id: service.id!,
-                          context: context,
-                        );
-                      },
-                      
-                    ),
-                  ),
-                );
-     
+            bool isFavorite = cubit.favorites[service.id] ?? false;
+            return Material(
+              color: Colors.transparent,
+              elevation: 5,
+              shape: const CircleBorder(),
+              child: Container(
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.grey[300],
+                ),
+                child: IconButton(
+                  padding: EdgeInsets.zero,
+                  icon: isFavorite
+                      ? const Icon(
+                          Icons.favorite_outlined,
+                          color: kLogoColor,
+                        )
+                      : const Icon(Icons.favorite_border_outlined),
+                  onPressed: () {
+                    ChangeFavoriteServiceCubit.get(context)
+                        .changeFavoriteServiceItem(
+                      id: service.id!,
+                      context: context,
+                    );
+                  },
+                ),
+              ),
+            );
           },
         ),
-      
       ],
     );
   }

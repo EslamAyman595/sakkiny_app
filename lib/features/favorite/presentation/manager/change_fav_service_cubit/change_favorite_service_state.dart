@@ -7,7 +7,7 @@ class InitialChangeFavoriteServiceState extends ChangeFavoriteServiceState {}
 class ChangeColorFavoriteServiceState extends ChangeFavoriteServiceState {}
 
 class SuccessChangeFavoriteServiceState extends ChangeFavoriteServiceState {
-  final FavServiceModel  changeFavoriteServiceModel;
+  final FavServiceModel changeFavoriteServiceModel;
   SuccessChangeFavoriteServiceState(this.changeFavoriteServiceModel);
 }
 

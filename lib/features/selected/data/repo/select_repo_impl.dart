@@ -12,11 +12,10 @@ class SelectRepoImpl extends SelectRepo {
       {required String idProperty}) async {
     try {
       var data = await DioHelper.getData(
-        url: '$getProperty/$idProperty',
-       // token: token,
-              token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVzbGFtYWltbjU5NUBnbWFpbC5jb20iLCJpZCI6IjY2N2RjMjJiZDZkNmQzZDRhMWZiOWQ0YyIsInJvbGUiOiJVc2VyIiwiaXNsb2dnZWQiOnRydWUsImlhdCI6MTcxOTUxODY0NH0.y7_df9LJNh90-XAjYBnItu_RsDR4iRXfO_BRjB1Wr10'
-
-      );
+          url: '$getProperty/$idProperty',
+          // token: token,
+          token:
+              'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVzbGFtYWltbjU5NUBnbWFpbC5jb20iLCJpZCI6IjY2N2RjMjJiZDZkNmQzZDRhMWZiOWQ0YyIsInJvbGUiOiJVc2VyIiwiaXNsb2dnZWQiOnRydWUsImlhdCI6MTcxOTUxODY0NH0.y7_df9LJNh90-XAjYBnItu_RsDR4iRXfO_BRjB1Wr10');
 
       return right(Property.fromJson(data.data['property']));
     } catch (e) {

@@ -7,7 +7,7 @@ class InitialChangeFavoriteState extends ChangeFavoriteState {}
 class ChangeColorFavoriteState extends ChangeFavoriteState {}
 
 class SuccessChangeFavoriteState extends ChangeFavoriteState {
-  final FavPropertyModel  changeFavoriteModel;
+  final FavPropertyModel changeFavoriteModel;
   SuccessChangeFavoriteState(this.changeFavoriteModel);
 }
 

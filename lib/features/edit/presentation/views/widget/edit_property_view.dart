@@ -2,9 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:sakkiny/core/utils/const.dart';
 import 'package:sakkiny/features/edit/presentation/views/widget/edit_property_view_body.dart';
+import 'package:sakkiny/features/home/data/models/home_model/property.dart'; // Import Property model
 
 class EditPropertyView extends StatelessWidget {
-  const EditPropertyView({Key? key}) : super(key: key);
+  final Property property; // Add this line
+
+  const EditPropertyView({Key? key, required this.property})
+      : super(key: key); // Modify constructor
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +33,7 @@ class EditPropertyView extends StatelessWidget {
           ],
         ),
       ),
-      body: const EditPropertyViewBody(),
+      body: EditPropertyViewBody(property: property),
     );
   }
 }

@@ -1,12 +1,10 @@
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 import 'package:sakkiny/core/errors/failures.dart';
-import 'package:sakkiny/features/edit/data/models/edit_property_model/dit_property_model.dart';
+import 'package:sakkiny/features/edit/data/models/edit_property_model/edit_property_model.dart';
 
-
-
-abstract class EditRepo{
-  Future<Either<Failures,EditPropertyModel>>editProperty({
+abstract class EditRepo {
+  Future<Either<Failures, EditPropertyModel>> editProperty({
     required String id,
     required bool isFurnished,
     required int price,
@@ -16,8 +14,8 @@ abstract class EditRepo{
     required int area,
     required String details,
     required String address,
-    // required num lat,
-    // required num long,
+    required num lat,
+    required num long,
     required List<MultipartFile> propertyImages,
     required String type,
     required String per,

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CustomErrorWidget extends StatelessWidget {
-  const CustomErrorWidget({Key? key, required this.errorMassage, this.color = Colors.red})
+  const CustomErrorWidget(
+      {Key? key, required this.errorMassage, this.color = Colors.red})
       : super(key: key);
   final String errorMassage;
   final Color? color;

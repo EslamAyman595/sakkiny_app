@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
+import 'package:sakkiny/core/utils/app_router.dart';
 import 'package:sakkiny/core/utils/const.dart';
 import 'package:sakkiny/core/widgets/show_toast.dart';
+import 'package:sakkiny/features/edit/presentation/views/widget/edit_property_view_body.dart';
 import 'package:sakkiny/features/favorite/presentation/manager/change_fav_cubit/change_favorite_cubit.dart';
 import 'package:sakkiny/features/favorite/presentation/manager/change_fav_cubit/change_favorite_state.dart';
 import 'package:sakkiny/features/home/data/models/home_model/property.dart';
@@ -20,6 +22,18 @@ class SelectedView extends StatelessWidget {
       create: (context) =>
           SelectCubit()..fetchSelectProperty(idProperty: property.id!),
       child: Scaffold(
+        // appBar: AppBar(
+        //   actions: [
+        //     IconButton(
+        //       color: Colors.red,
+        //       icon: Icon(Icons.edit),
+        //       onPressed: () {
+        //         GoRouter.of(context)
+        //             .push(AppRouter.kEditPropertyView, extra: property);
+        //       },
+        //     ),
+        //   ],
+        // ),
         body: SafeArea(
           child: Stack(
             children: [
@@ -39,6 +53,28 @@ class SelectedView extends StatelessWidget {
                         onPressed: () {
                           GoRouter.of(context).pop();
                         }),
+                    SizedBox(
+                      width: 180,
+                    ),
+                    FloatingActionButton(
+                        heroTag: 'edit',
+                        backgroundColor: kFloatingColor,
+                        mini: true,
+                        child: const Icon(
+                          Icons.edit,
+                          color: kLogoColor,
+                        ),
+                        onPressed: () {
+                          GoRouter.of(context).push(AppRouter.kEditPropertyView,
+                              extra: property);
+                        }),
+                    //            IconButton(
+                    //   color: Colors.red,
+                    //   icon: Icon(Icons.edit),
+                    //   onPressed: () {
+                    //    GoRouter.of(context).push(AppRouter.kEditPropertyView ,extra: property);
+                    //   },
+                    // ),
                     const Spacer(),
                     BlocProvider(
                       create: (context) => ChangeFavoriteCubit(),
@@ -57,7 +93,7 @@ class SelectedView extends StatelessWidget {
                               state: ToastState.SUCCESS,
                             );
                           }
-                          if (state is FailureChangeFavoriteState){
+                          if (state is FailureChangeFavoriteState) {
                             showToast(
                               txt: state.error,
                               state: ToastState.ERROR,

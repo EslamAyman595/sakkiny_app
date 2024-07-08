@@ -1,12 +1,13 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:sakkiny/features/favorite/data/model/fav_service_model/fav_service_model.dart';
 import 'package:sakkiny/features/favorite/presentation/views/widget/custom_services_fav.dart';
 
-
 class GridViewServicesFav extends StatelessWidget {
-  const GridViewServicesFav({Key? key, required this.favServiceModel,}) : super(key: key);
+  const GridViewServicesFav({
+    Key? key,
+    required this.favServiceModel,
+  }) : super(key: key);
   final FavServiceModel favServiceModel;
   @override
   Widget build(BuildContext context) {
@@ -20,8 +21,10 @@ class GridViewServicesFav extends StatelessWidget {
       crossAxisSpacing: 12,
       childAspectRatio: 1 / 1.63,
       children: List.generate(
-       favServiceModel.services!.length,
-        (index) =>  CustomServicesFav(service:favServiceModel.services![index] ,),
+        favServiceModel.services!.length,
+        (index) => CustomServicesFav(
+          service: favServiceModel.services![index],
+        ),
       ),
     );
   }

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:sakkiny/features/favorite/data/model/fav_property_model/fav_property_model..dart';
 

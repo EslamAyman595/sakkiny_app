@@ -25,6 +25,8 @@ import 'package:sakkiny/features/services/presentation/view/services_view.dart';
 import 'package:sakkiny/features/splash/splash_view.dart';
 import 'package:sakkiny/features/services/data/models/get_service_model/service.dart';
 import 'package:sakkiny/features/user/presentation/person_view.dart';
+import 'package:sakkiny/features/user_property/presentation/view/user_property_view.dart';
+import 'package:sakkiny/features/user_property/presentation/view/widgets/user_property_view_body.dart';
 import 'package:sakkiny/features/verify/presentation/view/verify_view.dart';
 
 abstract class AppRouter {
@@ -33,6 +35,7 @@ abstract class AppRouter {
   static const kSignUpView = '/SignUpView';
   static const kLayoutView = '/LayoutView';
   static const kHomeView = '/HomeView';
+   static const kUserPropertyView = '/UserPropertyView';
   static const kServicesView = '/ServicesView';
   static const kAddView = '/AddView';
   static const kFavoriteView = '/FavoriteView';
@@ -89,6 +92,12 @@ abstract class AppRouter {
         path: '/HomeView',
         builder: (BuildContext context, GoRouterState state) {
           return const HomeViewBody();
+        },
+      ),
+       GoRoute(
+        path: '/UserPropertyView',
+        builder: (BuildContext context, GoRouterState state) {
+          return const  UserPropertyViewBody();
         },
       ),
       GoRoute(
@@ -156,7 +165,9 @@ abstract class AppRouter {
       GoRoute(
         path: '/SelectedServicesView',
         builder: (BuildContext context, GoRouterState state) {
-          return SelectedServicesView(service: state.extra as Service,);
+          return SelectedServicesView(
+            service: state.extra as Service,
+          );
         },
       ),
       GoRoute(
@@ -174,13 +185,17 @@ abstract class AppRouter {
       GoRoute(
         path: '/EditView',
         builder: (BuildContext context, GoRouterState state) {
-          return const EditView();
+          return EditView(
+            property: state.extra as Property,
+          );
         },
       ),
       GoRoute(
         path: '/EditPropertyView',
         builder: (BuildContext context, GoRouterState state) {
-          return const EditPropertyView();
+          return EditPropertyView(
+            property: state.extra as Property,
+          );
         },
       ),
       GoRoute(

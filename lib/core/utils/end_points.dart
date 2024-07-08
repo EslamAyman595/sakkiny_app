@@ -9,7 +9,7 @@ const search = '/property/search';
 const addPropertyy = '/hosting/add';
 
 const getProperty = '/property';
-
+     const getUserProperty ='/user/myProperties';
 const getService = '/service';
 
 const addServicee = '/service/add';

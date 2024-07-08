@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sakkiny/core/utils/const.dart';
+import 'package:sakkiny/features/home/data/models/home_model/property.dart';
 import 'package:sakkiny/features/profile/presentation/views/widget/about_section.dart';
 import 'package:sakkiny/features/profile/presentation/views/widget/edit_section.dart';
 import 'package:sakkiny/features/profile/presentation/views/widget/lang_section.dart';
@@ -9,8 +10,9 @@ import 'package:sakkiny/features/profile/presentation/views/widget/user_profile_
 import 'package:sakkiny/features/profile/presentation/views/widget/verify_section.dart';
 
 class ProfileView extends StatelessWidget {
-  const ProfileView({Key? key}) : super(key: key);
-
+  const ProfileView({
+    Key? key,
+  }) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -19,13 +21,15 @@ class ProfileView extends StatelessWidget {
         child: Column(
           children: [
             const SizedBox(height: 30),
-            token == null ? const LoginSection() : const UserProfileBlocBuilder(),
+            token == null
+                ? const LoginSection()
+                : const UserProfileBlocBuilder(),
             const SizedBox(height: 50),
             const LangSection(),
             const SizedBox(height: 30),
             const AboutSection(),
             const SizedBox(height: 30),
-            const EditSection(),
+            EditSection(),
             const SizedBox(height: 30),
             const VerifySection(),
             const SizedBox(height: 30),

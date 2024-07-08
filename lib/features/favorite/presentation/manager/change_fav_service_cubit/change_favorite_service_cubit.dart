@@ -21,7 +21,7 @@ class ChangeFavoriteServiceCubit extends Cubit<ChangeFavoriteServiceState> {
       // FavCubit.get(context).fetchFavItem();
       FavServiceCubit.get(context).fetchFavServiceItem();
       emit(FailureChangeFavoriteServiceState(failure.error));
-    }, ( changeFavoriteServiceModel) {
+    }, (changeFavoriteServiceModel) {
       emit(SuccessChangeFavoriteServiceState(changeFavoriteServiceModel));
       FavServiceCubit.get(context).fetchFavServiceItem();
       changeFavoriteServiceModelCubit = changeFavoriteServiceModel;

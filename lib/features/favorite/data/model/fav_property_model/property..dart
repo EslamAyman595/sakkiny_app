@@ -30,31 +30,31 @@ import 'property_image..dart';
 // 	int? v;
 
 // 	Property({
-// 		this.essentials, 
-// 		this.id, 
-// 		this.description, 
-// 		this.type, 
-// 		this.roomsNumber, 
-// 		this.bedrooms, 
-// 		this.bathrooms, 
-// 		this.addedBy, 
-// 		this.addedByType, 
-// 		this.propertyImages, 
-// 		this.area, 
-// 		this.level, 
-// 		this.isFurnished, 
-// 		this.price, 
-// 		this.per, 
-// 		this.numberOfGuests, 
-// 		this.propertyStatus, 
-// 		this.address, 
-// 		this.latitude, 
-// 		this.longitude, 
-// 		this.customId, 
-// 		this.likesCount, 
-// 		this.createdAt, 
-// 		this.updatedAt, 
-// 		this.v, 
+// 		this.essentials,
+// 		this.id,
+// 		this.description,
+// 		this.type,
+// 		this.roomsNumber,
+// 		this.bedrooms,
+// 		this.bathrooms,
+// 		this.addedBy,
+// 		this.addedByType,
+// 		this.propertyImages,
+// 		this.area,
+// 		this.level,
+// 		this.isFurnished,
+// 		this.price,
+// 		this.per,
+// 		this.numberOfGuests,
+// 		this.propertyStatus,
+// 		this.address,
+// 		this.latitude,
+// 		this.longitude,
+// 		this.customId,
+// 		this.likesCount,
+// 		this.createdAt,
+// 		this.updatedAt,
+// 		this.v,
 // 	});
 
 // 	factory Property.fromJson(Map<String, dynamic> json) => Property(
@@ -123,7 +123,6 @@ import 'property_image..dart';
 // 				'__v': v,
 // 			};
 // }
-
 
 class Property {
   Essentials? essentials;

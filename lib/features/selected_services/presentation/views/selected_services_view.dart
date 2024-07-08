@@ -51,14 +51,12 @@ class SelectedServicesView extends StatelessWidget {
                           if (state is SuccessChangeFavoriteServiceState) {
                             if (!state.changeFavoriteServiceModel.status!) {
                               showToast(
-                                txt: state
-                                    .changeFavoriteServiceModel.message!,
+                                txt: state.changeFavoriteServiceModel.message!,
                                 state: ToastState.ERROR,
                               );
                             }
                             showToast(
-                              txt:
-                              state.changeFavoriteServiceModel.message!,
+                              txt: state.changeFavoriteServiceModel.message!,
                               state: ToastState.SUCCESS,
                             );
                           }
@@ -84,11 +82,11 @@ class SelectedServicesView extends StatelessWidget {
                                 padding: EdgeInsets.zero,
                                 icon: cubit.favorites[service.id]!
                                     ? const Icon(
-                                  Icons.favorite_outlined,
-                                  color: kLogoColor,
-                                )
+                                        Icons.favorite_outlined,
+                                        color: kLogoColor,
+                                      )
                                     : const Icon(
-                                    Icons.favorite_border_outlined),
+                                        Icons.favorite_border_outlined),
                                 onPressed: () {
                                   ChangeFavoriteServiceCubit.get(context)
                                       .changeFavoriteServiceItem(

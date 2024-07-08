@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:sakkiny/core/utils/app_router.dart';
@@ -13,7 +12,8 @@ class CustomServicesFav extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        GoRouter.of(context).push(AppRouter.kSelectedServicesView,extra: service);
+        GoRouter.of(context)
+            .push(AppRouter.kSelectedServicesView, extra: service);
       },
       child: Container(
         decoration: BoxDecoration(
@@ -21,10 +21,12 @@ class CustomServicesFav extends StatelessWidget {
           border: Border.all(color: Colors.black26),
           color: Colors.white,
         ),
-        child: Column (
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-         CustomImageFavService(service:  service,),
+            CustomImageFavService(
+              service: service,
+            ),
             Padding(
               padding: const EdgeInsets.only(
                 left: 10,
@@ -34,9 +36,9 @@ class CustomServicesFav extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                   Text(
+                  Text(
                     service.serviceCategory!,
-                    style:const TextStyle(
+                    style: const TextStyle(
                       fontSize: 14,
                       height: 1.3,
                       fontWeight: FontWeight.bold,
@@ -45,9 +47,9 @@ class CustomServicesFav extends StatelessWidget {
                     overflow: TextOverflow.ellipsis,
                   ),
                   const SizedBox(height: 10),
-                   Text(
+                  Text(
                     'Beginning from ${service.price} LE',
-                    style:const TextStyle(
+                    style: const TextStyle(
                       fontSize: 10,
                       color: kLogoColor,
                       fontWeight: FontWeight.bold,
@@ -57,8 +59,8 @@ class CustomServicesFav extends StatelessWidget {
                   ),
                   const SizedBox(height: 10),
                   Row(
-                    children:  [
-                    const  Icon(
+                    children: [
+                      const Icon(
                         Icons.location_on_outlined,
                         color: kLogoColor,
                         size: 15,

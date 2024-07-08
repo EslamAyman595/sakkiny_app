@@ -69,10 +69,8 @@ class _CustomGenresState extends State<CustomGenres>
                 controller: tabController,
                 physics: const BouncingScrollPhysics(),
                 children: const [
-                BlocBuilderFavItem (),
-
+                  BlocBuilderFavItem(),
                   BlocBuilderFavServiceItem(),
-                
                 ]),
           ),
         ),

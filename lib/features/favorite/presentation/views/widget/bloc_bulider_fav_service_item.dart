@@ -7,15 +7,17 @@ import 'package:sakkiny/features/favorite/presentation/manager/fav_service_cubit
 import 'package:sakkiny/features/favorite/presentation/manager/fav_service_cubit/fav_service_state.dart';
 import 'package:sakkiny/features/favorite/presentation/views/widget/grid_view_services_fav.dart';
 
-
 class BlocBuilderFavServiceItem extends StatelessWidget {
   const BlocBuilderFavServiceItem({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<FavServiceCubit, FavServiceStates>(builder: (context, state) {
+    return BlocBuilder<FavServiceCubit, FavServiceStates>(
+        builder: (context, state) {
       if (state is SuccessFetchFavoriteServiceState) {
-        return  GridViewServicesFav(favServiceModel: state.favServiceModel,);
+        return GridViewServicesFav(
+          favServiceModel: state.favServiceModel,
+        );
       } else if (state is FailureFetchFavoriteServiceState) {
         return CustomErrorWidget(errorMassage: state.error);
       } else {

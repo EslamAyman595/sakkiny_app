@@ -1,104 +1,45 @@
-// ignore_for_file: depend_on_referenced_packages
-
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:sakkiny/core/bloc_observer/bloc_observer.dart';
-import 'package:sakkiny/core/utils/app_localizations.dart';
-import 'package:sakkiny/core/utils/cache_helper.dart';
-import 'package:sakkiny/core/utils/const.dart';
-import 'package:sakkiny/core/utils/dio_helper.dart';
-import 'package:sakkiny/core/utils/service_locator.dart';
-import 'package:sakkiny/core/utils/theme_data.dart';
-import 'package:sakkiny/features/favorite/presentation/manager/change_fav_cubit/change_favorite_cubit.dart';
-import 'package:sakkiny/features/favorite/presentation/manager/change_fav_service_cubit/change_favorite_service_cubit.dart';
-import 'package:sakkiny/features/favorite/presentation/manager/fav_cubit/fav_cubit.dart';
-import 'package:sakkiny/features/favorite/presentation/manager/fav_service_cubit/fav_service_cubit.dart';
-import 'package:sakkiny/features/home/presentation/manger/property_cubit/property_cubit.dart';
-import 'package:sakkiny/features/home/presentation/manger/recommended_cubit/recommended_cubit.dart';
-import 'package:sakkiny/features/home/presentation/manger/user_cubit/user_cubit.dart';
-import 'package:sakkiny/features/layout/manger/layout_cubit.dart';
-import 'package:sakkiny/features/profile/presentation/manger/lang_cubit/lang_cubit.dart';
-import 'package:sakkiny/features/profile/presentation/manger/lang_cubit/lang_states.dart';
-import 'package:sakkiny/features/services/presentation/manger/cubit/service_cubit.dart';
-import 'core/utils/app_router.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
-
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  setupServiceLocator();
-  Bloc.observer = MyBlocObserver();
-  DioHelper.init();
-  await CacheHelper.init();
-  token = CacheHelper.getData(key: 'token');
-  debugPrint('token : $token');
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-  @override
-  Widget build(BuildContext context) {
-    return MultiBlocProvider(
-      providers: [
-        BlocProvider(
-          create: (context) => LayoutCubit(),
-        ),
-        BlocProvider(
-          create: (context) => PropertyCubit()..fetchProperty(),
-        ),
-        BlocProvider(
-          create: (context) => RecommendedCubit()..fetchRecommendedProperty(),
-        ),
-        BlocProvider(
-          create: (context) => ServiceCubit()..fetchService(),
-        ),
-        BlocProvider(
-          create: (context) => LocaleCubit()..getSavedLanguage(),
-
-        ),
-                BlocProvider(create: (context) => ChangeFavoriteCubit()),
-
-        BlocProvider(
-          create: (context) => FavCubit()..fetchFavItem(),
-        ),
-          BlocProvider(create: (context) => ChangeFavoriteServiceCubit()),
-
-        BlocProvider(
-          create: (context) => FavServiceCubit()..fetchFavServiceItem(),
-        ),
-         
-        BlocProvider(
-          create: (context) => UserCubit()..fetchUserInfo(),
-        ),
-      ],
-      child: BlocBuilder<LocaleCubit, ChangeLocaleState>(
-          builder: (context, state) {
-        return MaterialApp.router(
-          locale: state.locale,
-          supportedLocales: const [
-            Locale('en'),
-            Locale('ar'),
-          ],
-          localizationsDelegates: const [
-            AppLocalizations.delegate,
-            GlobalMaterialLocalizations.delegate,
-            GlobalWidgetsLocalizations.delegate,
-            GlobalCupertinoLocalizations.delegate
-          ],
-          localeResolutionCallback: (deviceLocale, supportedLocales) {
-            for (var locale in supportedLocales) {
-              if (deviceLocale != null &&
-                  deviceLocale.languageCode == locale.languageCode) {
-                return deviceLocale;
-              }
-            }
-            return supportedLocales.first;
-          },
-          routerConfig: AppRouter.router,
-          debugShowCheckedModeBanner: false,
-          theme: buildThemeData(),
-        );
-      }),
-    );
-  }
-}
+# This is a generated file; do not edit or check into version control.
+file_picker=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\file_picker-4.6.1\\
+file_selector_linux=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\file_selector_linux-0.9.2+1\\
+file_selector_macos=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\file_selector_macos-0.9.3+3\\
+file_selector_windows=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\file_selector_windows-0.9.3+1\\
+flutter_localization=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\flutter_localization-0.1.14\\
+flutter_plugin_android_lifecycle=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\flutter_plugin_android_lifecycle-2.0.17\\
+fluttertoast=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\fluttertoast-8.2.4\\
+geocoding=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\geocoding-3.0.0\\
+geocoding_android=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\geocoding_android-3.3.1\\
+geocoding_ios=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\geocoding_ios-3.0.1\\
+geolocator=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\geolocator-11.1.0\\
+geolocator_android=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\geolocator_android-4.4.1\\
+geolocator_apple=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\geolocator_apple-2.3.7\\
+geolocator_web=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\geolocator_web-3.0.0\\
+geolocator_windows=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\geolocator_windows-0.2.3\\
+google_maps_flutter=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\google_maps_flutter-2.3.0\\
+google_maps_flutter_android=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\google_maps_flutter_android-2.5.3\\
+google_maps_flutter_ios=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\google_maps_flutter_ios-2.3.2\\
+google_maps_flutter_web=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\google_maps_flutter_web-0.5.4+1\\
+image_picker=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\image_picker-1.0.4\\
+image_picker_android=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\image_picker_android-0.8.8+2\\
+image_picker_for_web=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\image_picker_for_web-3.0.1\\
+image_picker_ios=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\image_picker_ios-0.8.8+4\\
+image_picker_linux=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\image_picker_linux-0.2.1+1\\
+image_picker_macos=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\image_picker_macos-0.2.1+1\\
+image_picker_windows=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\image_picker_windows-0.2.1+1\\
+path_provider=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\path_provider-2.0.15\\
+path_provider_android=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\path_provider_android-2.2.1\\
+path_provider_foundation=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\path_provider_foundation-2.3.1\\
+path_provider_linux=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\path_provider_linux-2.2.1\\
+path_provider_windows=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\path_provider_windows-2.0.7\\
+share_plus=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\share_plus-4.5.3\\
+share_plus_linux=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\share_plus_linux-3.0.1\\
+share_plus_macos=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\share_plus_macos-3.0.1\\
+share_plus_web=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\share_plus_web-3.1.0\\
+share_plus_windows=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\share_plus_windows-3.0.1\\
+shared_preferences=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\shared_preferences-2.2.2\\
+shared_preferences_android=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\shared_preferences_android-2.2.1\\
+shared_preferences_foundation=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\shared_preferences_foundation-2.3.4\\
+shared_preferences_linux=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\shared_preferences_linux-2.3.2\\
+shared_preferences_web=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\shared_preferences_web-2.2.1\\
+shared_preferences_windows=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\shared_preferences_windows-2.3.2\\
+sqflite=C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\sqflite-2.2.8+4\\
+url_launcher=C:\\Users\\DELL\\AppData\\Local\\Pub\
