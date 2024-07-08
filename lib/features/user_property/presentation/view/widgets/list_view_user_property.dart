@@ -1,4 +1,7 @@
 import 'package:flutter/cupertino.dart';
+import 'package:sakkiny/core/widgets/custom_divider.dart';
+import 'package:sakkiny/features/home/data/models/home_model/property.dart';
+import 'package:sakkiny/features/user_property/presentation/view/widgets/custom_user_property_detailss.dart';
 
 class ListViewUserProperty extends StatelessWidget {
   const ListViewUserProperty({Key? key, required this.properties})
@@ -13,7 +16,7 @@ class ListViewUserProperty extends StatelessWidget {
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(), // Change to NeverScrollableScrollPhysics
       itemBuilder: (context, index) => CustomUserPropertyDetails(property: properties[index]),
-      separatorBuilder: (context, index) => const SizedBox(height: 10),
+      separatorBuilder: (context, index) => const CustomDivider(),
       itemCount: properties.length,
     );
   }

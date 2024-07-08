@@ -1,1 +1,478 @@
-{"inputs":["E:\\sakkiny\\sakkiny\\.dart_tool\\flutter_build\\40cabf288ca5354ab48580e709dc249f\\app.dill","C:\\src\\flutter\\packages\\flutter_tools\\lib\\src\\build_system\\targets\\icon_tree_shaker.dart","C:\\src\\flutter\\bin\\internal\\engine.version","C:\\src\\flutter\\bin\\internal\\engine.version","C:\\src\\flutter\\bin\\internal\\engine.version","C:\\src\\flutter\\bin\\internal\\engine.version","E:\\sakkiny\\sakkiny\\pubspec.yaml","E:\\sakkiny\\sakkiny\\assets\\images\\get_start1.jpg","E:\\sakkiny\\sakkiny\\assets\\images\\get_start2.jpg","E:\\sakkiny\\sakkiny\\assets\\images\\get_start3.jpg","E:\\sakkiny\\sakkiny\\assets\\images\\get_start4.jpg","E:\\sakkiny\\sakkiny\\assets\\images\\get_start_d1.jpeg","E:\\sakkiny\\sakkiny\\assets\\images\\get_start_d2.jpeg","E:\\sakkiny\\sakkiny\\assets\\images\\get_start_d3.jpeg","E:\\sakkiny\\sakkiny\\assets\\images\\gmail_logo.png","E:\\sakkiny\\sakkiny\\assets\\images\\logo.png","E:\\sakkiny\\sakkiny\\assets\\images\\loma1.png","E:\\sakkiny\\sakkiny\\assets\\images\\loma2.jpg","E:\\sakkiny\\sakkiny\\assets\\images\\loma3.jpg","E:\\sakkiny\\sakkiny\\assets\\images\\map1.jpg","E:\\sakkiny\\sakkiny\\assets\\images\\map2.jpg","E:\\sakkiny\\sakkiny\\assets\\images\\noProfileImage.jpg","E:\\sakkiny\\sakkiny\\assets\\images\\services.png","E:\\sakkiny\\sakkiny\\assets\\images\\stack_get_start.jpg","E:\\sakkiny\\sakkiny\\assets\\animation\\home1.json","E:\\sakkiny\\sakkiny\\assets\\animation\\home2.json","E:\\sakkiny\\sakkiny\\assets\\animation\\login.json","E:\\sakkiny\\sakkiny\\assets\\animation\\register.json","E:\\sakkiny\\sakkiny\\assets\\animation\\s.json","E:\\sakkiny\\sakkiny\\assets\\animation\\splash_screen.json","E:\\sakkiny\\sakkiny\\assets\\lang\\ar.json","E:\\sakkiny\\sakkiny\\assets\\lang\\en.json","E:\\sakkiny\\sakkiny\\assets\\fonts\\Montserrat-Regular.ttf","E:\\sakkiny\\sakkiny\\assets\\fonts\\Jacquard24-Regular.ttf","E:\\sakkiny\\sakkiny\\assets\\fonts\\Jacquard-Regular.ttf","E:\\sakkiny\\sakkiny\\assets\\fonts\\DancingScript-Regular.ttf","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\csc_picker-0.2.7\\lib\\assets\\country.json","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\cupertino_icons-1.0.6\\assets\\CupertinoIcons.ttf","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\fluttertoast-8.2.4\\assets\\toastify.css","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\fluttertoast-8.2.4\\assets\\toastify.js","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\font_awesome_flutter-10.4.0\\lib\\fonts\\fa-brands-400.ttf","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\font_awesome_flutter-10.4.0\\lib\\fonts\\fa-regular-400.ttf","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\font_awesome_flutter-10.4.0\\lib\\fonts\\fa-solid-900.ttf","C:\\src\\flutter\\bin\\cache\\artifacts\\material_fonts\\MaterialIcons-Regular.otf","C:\\src\\flutter\\packages\\flutter\\lib\\src\\material\\shaders\\ink_sparkle.frag","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\archive-3.4.10\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\args-2.4.2\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\async-2.11.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\bloc-8.1.2\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\boolean_selector-2.1.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\cached_network_image-3.2.3\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\cached_network_image_platform_interface-2.0.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\cached_network_image_web-1.0.2\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\carousel_slider-4.2.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\characters-1.3.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\clock-1.1.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\collection-1.17.2\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\conditional_builder_null_safety-0.0.6\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\convert-3.1.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\cross_file-0.3.3+6\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\crypto-3.0.3\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\csc_picker-0.2.7\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\csslib-1.0.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\cupertino_icons-1.0.6\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\dartz-0.10.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\dio-5.4.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\equatable-2.0.5\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\fake_async-1.3.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\ffi-1.2.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\file-6.1.4\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\file_picker-4.6.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\file_selector_linux-0.9.2+1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\file_selector_macos-0.9.3+3\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\file_selector_platform_interface-2.6.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\file_selector_windows-0.9.3+1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\flutter_bloc-8.1.3\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\flutter_blurhash-0.7.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\flutter_cache_manager-3.3.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\flutter_lints-2.0.3\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\flutter_localization-0.1.14\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\flutter_plugin_android_lifecycle-2.0.17\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\flutter_rating_bar-4.0.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\flutter_svg-2.0.5\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\fluttertoast-8.2.4\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\font_awesome_flutter-10.4.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\geocoding-3.0.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\geocoding_android-3.3.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\geocoding_ios-3.0.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\geocoding_platform_interface-3.2.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\geolocator-11.1.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\geolocator_android-4.4.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\geolocator_apple-2.3.7\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\geolocator_platform_interface-4.1.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\geolocator_web-3.0.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\geolocator_windows-0.2.3\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\get_it-7.6.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\go_router-12.1.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\google_maps-6.3.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\google_maps_flutter-2.3.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\google_maps_flutter_android-2.5.3\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\google_maps_flutter_ios-2.3.2\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\google_maps_flutter_platform_interface-2.4.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\google_maps_flutter_web-0.5.4+1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\html-0.15.4\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\http-0.13.6\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\http_parser-4.0.2\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\image_picker-1.0.4\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\image_picker_android-0.8.8+2\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\image_picker_for_web-3.0.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\image_picker_ios-0.8.8+4\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\image_picker_linux-0.2.1+1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\image_picker_macos-0.2.1+1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\image_picker_platform_interface-2.9.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\image_picker_windows-0.2.1+1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\intl-0.18.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\js-0.6.5\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\js_wrapping-0.7.4\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\lints-2.0.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\logging-1.2.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\lottie-2.3.2\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\matcher-0.12.16\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\material_color_utilities-0.5.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\meta-1.9.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\mime-1.0.4\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\nested-1.0.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\octo_image-1.0.2\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\path-1.8.3\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\path_parsing-1.0.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\path_provider-2.0.15\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\path_provider_android-2.2.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\path_provider_foundation-2.3.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\path_provider_linux-2.2.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\path_provider_platform_interface-2.1.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\path_provider_windows-2.0.7\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\petitparser-5.1.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\platform-3.1.3\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\plugin_platform_interface-2.1.6\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\pointycastle-3.7.3\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\provider-6.1.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\rxdart-0.27.7\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\sanitize_html-2.1.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\share_plus-4.5.3\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\share_plus_linux-3.0.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\share_plus_macos-3.0.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\share_plus_platform_interface-3.4.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\share_plus_web-3.1.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\share_plus_windows-3.0.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\shared_preferences-2.2.2\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\shared_preferences_android-2.2.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\shared_preferences_foundation-2.3.4\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\shared_preferences_linux-2.3.2\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\shared_preferences_platform_interface-2.3.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\shared_preferences_web-2.2.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\shared_preferences_windows-2.3.2\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\smooth_page_indicator-1.1.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\source_span-1.10.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\sprintf-7.0.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\sqflite-2.2.8+4\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\sqflite_common-2.4.5+1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\stack_trace-1.11.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\stream_channel-2.1.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\stream_transform-2.1.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\string_scanner-1.2.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\synchronized-3.1.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\term_glyph-1.2.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\test_api-0.6.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\typed_data-1.3.2\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\url_launcher-6.1.11\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\url_launcher_android-6.2.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\url_launcher_ios-6.2.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\url_launcher_linux-3.1.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\url_launcher_macos-3.1.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\url_launcher_platform_interface-2.2.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\url_launcher_web-2.0.19\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\url_launcher_windows-3.1.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\uuid-4.1.0\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\vector_graphics-1.1.5\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\vector_graphics_codec-1.1.5\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\vector_graphics_compiler-1.1.5\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\vector_math-2.1.4\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\web-0.1.4-beta\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\win32-2.6.1\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\xdg_directories-1.0.3\\LICENSE","C:\\Users\\DELL\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\xml-6.2.2\\LICENSE","C:\\src\\flutter\\bin\\cache\\pkg\\sky_engine\\LICENSE","C:\\src\\flutter\\packages\\flutter\\LICENSE","E:\\sakkiny\\sakkiny\\DOES_NOT_EXIST_RERUN_FOR_WILDCARD279690252"],"outputs":["E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\vm_snapshot_data","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\isolate_snapshot_data","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\kernel_blob.bin","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/images/get_start1.jpg","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/images/get_start2.jpg","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/images/get_start3.jpg","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/images/get_start4.jpg","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/images/get_start_d1.jpeg","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/images/get_start_d2.jpeg","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/images/get_start_d3.jpeg","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/images/gmail_logo.png","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/images/logo.png","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/images/loma1.png","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/images/loma2.jpg","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/images/loma3.jpg","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/images/map1.jpg","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/images/map2.jpg","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/images/noProfileImage.jpg","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/images/services.png","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/images/stack_get_start.jpg","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/animation/home1.json","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/animation/home2.json","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/animation/login.json","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/animation/register.json","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/animation/s.json","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/animation/splash_screen.json","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/lang/ar.json","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/lang/en.json","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/fonts/Montserrat-Regular.ttf","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/fonts/Jacquard24-Regular.ttf","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/fonts/Jacquard-Regular.ttf","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\assets/fonts/DancingScript-Regular.ttf","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\packages/csc_picker/lib/assets/country.json","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\packages/cupertino_icons/assets/CupertinoIcons.ttf","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\packages/fluttertoast/assets/toastify.css","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\packages/fluttertoast/assets/toastify.js","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\fonts/MaterialIcons-Regular.otf","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\shaders/ink_sparkle.frag","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\AssetManifest.json","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\AssetManifest.bin","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\FontManifest.json","E:\\sakkiny\\sakkiny\\build\\app\\intermediates\\flutter\\debug\\flutter_assets\\NOTICES.Z"]}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+
+
+
+
+
+
+
+import 'package:dio/dio.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:sakkiny/core/errors/failures.dart';
+import 'package:sakkiny/core/utils/app_localizations.dart';
+import 'package:sakkiny/core/utils/const.dart';
+import 'package:sakkiny/core/widgets/custom_button.dart';
+import 'package:sakkiny/core/widgets/custom_text_form_field.dart';
+import 'package:sakkiny/core/widgets/show_toast.dart';
+import 'package:sakkiny/features/add/presentation/views/widget/bathroom_details.dart';
+import 'package:sakkiny/features/add/presentation/views/widget/custom_chose_image.dart';
+import 'package:sakkiny/features/add/presentation/views/widget/floor_details.dart';
+import 'package:sakkiny/features/add/presentation/views/widget/rental_rate_details.dart';
+import 'package:sakkiny/features/add/presentation/views/widget/search_map.text.dart';
+import 'package:sakkiny/features/add/presentation/views/widget/text_field_details.dart';
+import 'package:sakkiny/features/add/presentation/views/widget/type_property_details.dart';
+import 'package:sakkiny/features/edit/presentation/manger/edit_property/edit_cubit.dart';
+import 'package:sakkiny/features/edit/presentation/manger/edit_property/edit_state.dart';
+import 'package:sakkiny/features/home/data/models/home_model/property.dart';
+
+class EditPropertyViewBody extends StatefulWidget {
+  final Property property; // Add this line
+
+  const EditPropertyViewBody(
+      {super.key, required this.property}); // Modify constructor
+
+  @override
+  State<EditPropertyViewBody> createState() => _EditPropertyViewBodyState();
+}
+
+class _EditPropertyViewBodyState extends State<EditPropertyViewBody> {
+  var formKey = GlobalKey<FormState>();
+  AutovalidateMode autoValidateMode = AutovalidateMode.disabled;
+  List<XFile> selectedImages = [];
+  List<String> existingImages = [];
+  TextEditingController priceController = TextEditingController();
+  TextEditingController unitController = TextEditingController();
+   TextEditingController bedroomController = TextEditingController();
+  TextEditingController locationController = TextEditingController();
+  TextEditingController addressController = TextEditingController();
+  TextEditingController typeController = TextEditingController();
+  TextEditingController descController = TextEditingController();
+  TextEditingController rentalController = TextEditingController();
+  TextEditingController floorController = TextEditingController();
+  TextEditingController bathroomsController = TextEditingController();
+  TextEditingController luxuriesController = TextEditingController();
+  double lang = 0;
+  double lat = 0;
+  bool isFurnished = true;
+  bool isLoading = false;
+
+  @override
+  void initState() {
+    super.initState();
+    // Initialize form fields with the property data
+    priceController.text = widget.property.price.toString();
+    addressController.text = widget.property.address.toString();
+    typeController.text = widget.property.type.toString();
+    descController.text = widget.property.description.toString();
+    rentalController.text = widget.property.per.toString();
+    floorController.text = widget.property.level.toString();
+    bathroomsController.text = widget.property.bathrooms.toString();
+    bedroomController.text=widget.property.bedrooms.toString();
+    unitController.text=widget.property.area.toString();
+    //luxuriesController.text = widget.property.essentials?.toString() ?? '';
+    //luxuriesController.text = widget.property.essentials?.join(', ') ?? ''; 
+    lang = widget.property.longitude!.toDouble();
+    lat = widget.property.latitude!.toDouble();
+
+    // Initialize existing images
+    existingImages = widget.property.propertyImages
+            ?.map((propertyImage) => propertyImage.secureUrl!)
+            .toList() ??
+        [];
+  }
+
+  @override
+  void dispose() {
+    priceController.dispose();
+    unitController.dispose();
+    locationController.dispose();
+    addressController.dispose();
+    typeController.dispose();
+    descController.dispose();
+    floorController.dispose();
+    bathroomsController.dispose();
+    luxuriesController.dispose();
+    super.dispose();
+  }
+
+  void handleImageSelection(List<XFile> images) {
+    setState(() {
+      selectedImages = images;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return BlocConsumer<EditPropertyCubit, EditPropertyState>(
+      listener: (context, state) {
+        if (state is EditPropertyLoading) {
+          isLoading = true;
+        }
+        if (state is EditPropertySuccess) {
+          isLoading = false;
+          showToast(
+            txt: state.editPropertyModel.message!,
+            state: ToastState.SUCCESS,
+          );
+        }
+        if (state is EditPropertyFailure) {
+          isLoading = false;
+          final errorMessage = state.error is ServerFailure
+              ? (state.error as ServerFailure).error
+              : 'An error occurred';
+          showToast(
+            txt: errorMessage,
+            state: ToastState.ERROR,
+          );
+          print(errorMessage);
+        }
+      },
+      builder: (context, state) {
+        EditPropertyCubit cubit = EditPropertyCubit.get(context);
+
+        return Form(
+          key: formKey,
+          autovalidateMode: autoValidateMode,
+          child: Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: SingleChildScrollView(
+              physics: const BouncingScrollPhysics(),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Furnished'.tr(context),
+                        style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                        ),
+                      ),
+                      const SizedBox(height: 15),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          InkWell(
+                            onTap: () {
+                              setState(() {
+                                isFurnished = true;
+                              });
+                            },
+                            child: Material(
+                              elevation: 4,
+                              borderRadius: BorderRadius.circular(50),
+                              child: Container(
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 10, vertical: 5),
+                                decoration: BoxDecoration(
+                                  color: isFurnished
+                                      ? kLogoColor
+                                      : Colors.transparent,
+                                  borderRadius: BorderRadius.circular(50),
+                                  border: Border.all(color: Colors.black26),
+                                ),
+                                child: Text(
+                                  'Yes'.tr(context),
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 15,
+                                    color: isFurnished
+                                        ? Colors.white
+                                        : Colors.black,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(width: 40),
+                          InkWell(
+                            onTap: () {
+                              setState(() {
+                                isFurnished = false;
+                              });
+                            },
+                            child: Material(
+                              elevation: 4,
+                              borderRadius: BorderRadius.circular(50),
+                              child: Container(
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 10, vertical: 5),
+                                decoration: BoxDecoration(
+                                  color: isFurnished
+                                      ? Colors.transparent
+                                      : kLogoColor,
+                                  borderRadius: BorderRadius.circular(50),
+                                  border: Border.all(color: Colors.black26),
+                                ),
+                                child: Text(
+                                  'No'.tr(context),
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 15,
+                                    color: isFurnished
+                                        ? Colors.black
+                                        : Colors.white,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+
+                  SizedBox(height: 30),
+                  CustomTextFormField(
+                    colorText: Colors.black,
+                    controller: priceController,
+                    isFilled: false,
+                    labelText: 'Price'.tr(context),
+                    keyboardType: TextInputType.number,
+                    validatorText: 'Enter The Price !!'.tr(context),
+                  ),
+                   SizedBox(height: 30),
+                  CustomTextFormField(
+                    colorText: Colors.black,
+                    controller: unitController,
+                    isFilled: false,
+                    labelText: 'Unit'.tr(context),
+                    keyboardType: TextInputType.number,
+                    validatorText: 'Enter The Unit !!'.tr(context),
+                  ),
+                   SizedBox(height: 30),
+                  CustomTextFormField(
+                    colorText: Colors.black,
+                    controller: bedroomController,
+                    isFilled: false,
+                    labelText: 'Bedroom'.tr(context),
+                    keyboardType: TextInputType.number,
+                    validatorText: 'Enter The Bedroom!!'.tr(context),
+                  ),
+                  const SizedBox(height: 30),
+                  CustomTextFormField(
+                    colorText: Colors.black,
+                    controller: rentalController,
+                    isFilled: false,
+                    labelText: 'Rental rate'.tr(context),
+                    keyboardType: TextInputType.number,
+                    suffixIcon: const Icon(Icons.arrow_forward_ios),
+                    validatorText: 'Enter Rental rate !!'.tr(context),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (BuildContext context) {
+                            return RentalDetails(controller: rentalController);
+                          },
+                        ),
+                      );
+                    },
+                  ),
+                  const SizedBox(height: 30),
+                  CustomTextFormField(
+                    colorText: Colors.black,
+                    controller: floorController,
+                    isFilled: false,
+                    labelText: 'Floor'.tr(context),
+                    suffixIcon: const Icon(Icons.arrow_forward_ios),
+                    keyboardType: TextInputType.number,
+                    validatorText: 'Enter Floor !!'.tr(context),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (BuildContext context) {
+                            return FloorDetails(
+                              fController: floorController,
+                            );
+                          },
+                        ),
+                      );
+                    },
+                  ),
+                  const SizedBox(height: 30),
+                  CustomTextFormField(
+                    colorText: Colors.black,
+                    controller: bathroomsController,
+                    isFilled: false,
+                    labelText: 'Bathrooms'.tr(context),
+                    suffixIcon: const Icon(Icons.arrow_forward_ios),
+                    keyboardType: TextInputType.number,
+                    validatorText: 'Enter number of bathrooms !!'.tr(context),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (BuildContext context) {
+                            return BathroomsDetails(
+                              bController: bathroomsController,
+                            );
+                          },
+                        ),
+                      );
+                    },
+                  ),
+                  const SizedBox(height: 30),
+                  CustomTextFormField(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (BuildContext context) {
+                            return TextFieldDetails(
+                              controllerOfList: luxuriesController,
+                            );
+                          },
+                        ),
+                      );
+                    },
+                    colorText: Colors.black,
+                    controller: luxuriesController,
+                    isFilled: false,
+                    labelText: 'Luxuries'.tr(context),
+                    suffixIcon: const Icon(Icons.arrow_forward_ios),
+                    keyboardType: TextInputType.text,
+                    validatorText: 'Enter Luxuries !!'.tr(context),
+                  ),
+                  const SizedBox(height: 30),
+                  CustomTextFormField(
+                    colorText: Colors.black,
+                    controller: descController,
+                    isFilled: false,
+                    labelText: 'Description'.tr(context),
+                    keyboardType: TextInputType.text,
+                    validatorText: 'Enter Description !!'.tr(context),
+                  ),
+                  const SizedBox(height: 30),
+                  CustomTextFormField(
+                    colorText: Colors.black,
+                    controller: addressController,
+                    isFilled: false,
+                    labelText: 'Address'.tr(context),
+                    keyboardType: TextInputType.text,
+                    validatorText: 'Enter Address !!'.tr(context),
+                  ),
+                  const SizedBox(height: 30),
+                  CustomTextFormField(
+                    onTap: () async {
+                      Map<String, dynamic>? result = await Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (BuildContext context) {
+                          return const MapSearchPage();
+                        }),
+                      );
+                      if (result != null) {
+                        locationController.text = result['city_name'];
+                        lat = result['latLng'].latitude;
+                        lang = result['latLng'].longitude;
+                      }
+                    },
+                    colorText: Colors.black,
+                    controller: locationController,
+                    isFilled: false,
+                    labelText: 'Location'.tr(context),
+                    keyboardType: TextInputType.text,
+                    validatorText: 'Enter The Location !!'.tr(context),
+                  ),
+                  const SizedBox(height: 30),
+                  // Display existing images
+                  if (existingImages.isNotEmpty) ...[
+                    Text('Existing Images:',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold)),
+                    SizedBox(height: 10),
+                    Wrap(
+                      spacing: 10,
+                      runSpacing: 10,
+                      children: existingImages.map((imageUrl) {
+                        return Image.network(
+                          imageUrl,
+                          width: 100,
+                          height: 100,
+                          fit: BoxFit.cover,
+                        );
+                      }).toList(),
+                    ),
+                  ],
+                  CustomChoseImage(onImagesSelected: handleImageSelection),
+                  const SizedBox(height: 30),
+                  CustomTextFormField(
+                    colorText: Colors.black,
+                    controller: typeController,
+                    isFilled: false,
+                    labelText: 'Type'.tr(context),
+                    suffixIcon: const Icon(Icons.arrow_forward_ios),
+                    validatorText: 'Enter The Type !!'.tr(context),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (BuildContext context) {
+                            return TypeDetails(
+                              controller: typeController,
+                            );
+                          },
+                        ),
+                      );
+                    },
+                  ),
+                  const SizedBox(height: 30),
+                  CustomButon(
+                    text: 'Edit My Property',
+                    width: double.infinity,
+                    radius: 10,
+                    onPressed: () async {
+                      if (formKey.currentState!.validate() &&
+                          selectedImages.isNotEmpty) {
+                        cubit.editProperty(
+                          bedrooms: int.tryParse(bedroomController.text) ?? 0,
+                          area: int.tryParse(unitController.text) ?? 0,
+                          id:  widget.property.id!,
+                          type: typeController.text,
+                          description: descController.text,
+                          bathrooms:
+                              int.tryParse(bathroomsController.text) ?? 0,
+                          details: luxuriesController.text,
+                          level: floorController.text,
+                          price:
+                              double.tryParse(priceController.text)?.toInt() ??
+                                  0,
+                          per: rentalController.text,
+                          isFurnished: isFurnished,
+                          address: addressController.text,
+                          propertyImages: await Future.wait(
+                            selectedImages.map(
+                              (image) async => await MultipartFile.fromFile(
+                                image.path,
+                                filename: image.name,
+                              ),
+                            ),
+                          ),
+                          long: lang,
+                          lat: lat,
+                        );
+                      } else {
+                        autoValidateMode = AutovalidateMode.always;
+                        setState(() {});
+                      }
+                      if (selectedImages.isEmpty) {
+                        showToast(
+                            txt: 'Choose from gallery five image at least'
+                                .tr(context),
+                            state: ToastState.ERROR);
+                      }
+                    },
+                  )
+                ],
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+}

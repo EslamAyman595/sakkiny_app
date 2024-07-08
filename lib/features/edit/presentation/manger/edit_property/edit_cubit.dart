@@ -48,4 +48,13 @@ final PropertyCubit propertyCubit;
         lat: lat,
         long: long);
 
-    result.fold((er
+   // result.fold((er
+    result.fold((error) {
+      emit(EditPropertyFailure(error: error.toString()));
+    }, (editPropertyModel) {
+      // Trigger a refresh of the property list
+      propertyCubit.fetchProperty();
+      emit( EditPropertySuccess(editPropertyModel:editPropertyModel ));
+    });
+  }
+}

@@ -5,8 +5,8 @@ import 'package:sakkiny/core/utils/const.dart';
 import 'package:sakkiny/core/widgets/show_toast.dart';
 import 'package:sakkiny/features/favorite/presentation/manager/change_fav_cubit/change_favorite_cubit.dart';
 import 'package:sakkiny/features/favorite/presentation/manager/change_fav_cubit/change_favorite_state.dart';
+import 'package:sakkiny/features/home/data/models/home_model/property.dart';
 import 'package:sakkiny/features/home/presentation/manger/property_cubit/property_cubit.dart';
-import 'package:sakkiny/features/user_property/data/model/user_property_model/property.dart';
 
 
 class CustomUserPropertyImage extends StatelessWidget {
@@ -87,4 +87,7 @@ class CustomUserPropertyImage extends StatelessWidget {
             ],
           ),
         ),
-     
+      ]
+    );
+  }
+}
