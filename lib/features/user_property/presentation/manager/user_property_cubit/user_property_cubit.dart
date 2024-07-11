@@ -9,10 +9,11 @@ class UserPropertyCubit extends Cubit<UserPropertyStates> {
 
   Map<String?, bool?> favorites = {};
 
-  Future<void> fetchProperty() async {
+  Future<void> fetchUserProperty() async {
     emit(LoadingUserPropertyState());
     var result = await UserPropertyRepoImpl().fetchUserProperty();
     result.fold((failure) {
+      print(failure.error.toString());
       emit(FailureUserPropertyState(failure.error));
     }, (properties) {
       favorites = {

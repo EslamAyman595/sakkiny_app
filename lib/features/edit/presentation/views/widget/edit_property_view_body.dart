@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -22,9 +15,12 @@ import 'package:sakkiny/features/add/presentation/views/widget/rental_rate_detai
 import 'package:sakkiny/features/add/presentation/views/widget/search_map.text.dart';
 import 'package:sakkiny/features/add/presentation/views/widget/text_field_details.dart';
 import 'package:sakkiny/features/add/presentation/views/widget/type_property_details.dart';
+import 'package:sakkiny/features/edit/presentation/manger/delte_property/delte_propert_state.dart';
+import 'package:sakkiny/features/edit/presentation/manger/delte_property/delte_property_cubit.dart';
 import 'package:sakkiny/features/edit/presentation/manger/edit_property/edit_cubit.dart';
 import 'package:sakkiny/features/edit/presentation/manger/edit_property/edit_state.dart';
 import 'package:sakkiny/features/home/data/models/home_model/property.dart';
+import 'package:sakkiny/features/home/presentation/manger/property_cubit/property_cubit.dart';
 
 class EditPropertyViewBody extends StatefulWidget {
   final Property property; // Add this line
@@ -43,7 +39,7 @@ class _EditPropertyViewBodyState extends State<EditPropertyViewBody> {
   List<String> existingImages = [];
   TextEditingController priceController = TextEditingController();
   TextEditingController unitController = TextEditingController();
-   TextEditingController bedroomController = TextEditingController();
+  TextEditingController bedroomController = TextEditingController();
   TextEditingController locationController = TextEditingController();
   TextEditingController addressController = TextEditingController();
   TextEditingController typeController = TextEditingController();
@@ -68,10 +64,10 @@ class _EditPropertyViewBodyState extends State<EditPropertyViewBody> {
     rentalController.text = widget.property.per.toString();
     floorController.text = widget.property.level.toString();
     bathroomsController.text = widget.property.bathrooms.toString();
-    bedroomController.text=widget.property.bedrooms.toString();
-    unitController.text=widget.property.area.toString();
+    bedroomController.text = widget.property.bedrooms.toString();
+    unitController.text = widget.property.area.toString();
     //luxuriesController.text = widget.property.essentials?.toString() ?? '';
-    //luxuriesController.text = widget.property.essentials?.join(', ') ?? ''; 
+    //luxuriesController.text = widget.property.essentials?.join(', ') ?? '';
     lang = widget.property.longitude!.toDouble();
     lat = widget.property.latitude!.toDouble();
 
@@ -115,6 +111,8 @@ class _EditPropertyViewBodyState extends State<EditPropertyViewBody> {
             txt: state.editPropertyModel.message!,
             state: ToastState.SUCCESS,
           );
+           context.read<PropertyCubit>().fetchProperty();
+         Navigator.of(context).pop();
         }
         if (state is EditPropertyFailure) {
           isLoading = false;
@@ -234,7 +232,7 @@ class _EditPropertyViewBodyState extends State<EditPropertyViewBody> {
                     keyboardType: TextInputType.number,
                     validatorText: 'Enter The Price !!'.tr(context),
                   ),
-                   SizedBox(height: 30),
+                  SizedBox(height: 30),
                   CustomTextFormField(
                     colorText: Colors.black,
                     controller: unitController,
@@ -243,7 +241,7 @@ class _EditPropertyViewBodyState extends State<EditPropertyViewBody> {
                     keyboardType: TextInputType.number,
                     validatorText: 'Enter The Unit !!'.tr(context),
                   ),
-                   SizedBox(height: 30),
+                  SizedBox(height: 30),
                   CustomTextFormField(
                     colorText: Colors.black,
                     controller: bedroomController,
@@ -431,7 +429,7 @@ class _EditPropertyViewBodyState extends State<EditPropertyViewBody> {
                         cubit.editProperty(
                           bedrooms: int.tryParse(bedroomController.text) ?? 0,
                           area: int.tryParse(unitController.text) ?? 0,
-                          id:  widget.property.id!,
+                          id: widget.property.id!,
                           type: typeController.text,
                           description: descController.text,
                           bathrooms:
@@ -465,6 +463,50 @@ class _EditPropertyViewBodyState extends State<EditPropertyViewBody> {
                                 .tr(context),
                             state: ToastState.ERROR);
                       }
+                    },
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  BlocConsumer<DeltePropertyCubit, DeltePropertyState>(
+                    listener: (context, state) {
+                         if (state is DeltePropertyLoading) {
+          isLoading = true;
+        }
+        if (state is DeltePropertySuccess) {
+          isLoading = false;
+          showToast(
+            txt: 'Delte',
+            state: ToastState.SUCCESS,
+          );
+          print('sucess');
+           context.read<PropertyCubit>().fetchProperty();
+
+          Navigator.of(context).pop();
+        }if (state is DeltePropertyFailure) {
+          isLoading = false;
+            print('An error occurred');
+          showToast(
+            txt: 'An error occurred',
+            state: ToastState.ERROR,
+          );
+        
+        }
+                    },
+                    
+                    builder: (context, state) {
+                       DeltePropertyCubit cubit = DeltePropertyCubit.get(context);
+                      return CustomButon(
+                        text: 'Delte My Property',
+                        width: double.infinity,
+                        radius: 10,
+                        background: Colors.red,
+                        onPressed: () {
+                             cubit.delteProperty(id: widget.property.id!);
+                          
+                         
+                        },
+                      );
                     },
                   )
                 ],

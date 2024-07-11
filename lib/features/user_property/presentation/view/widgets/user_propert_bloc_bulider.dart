@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sakkiny/core/utils/app_localizations.dart';
 import 'package:sakkiny/core/widgets/custom_error_widget.dart';
-import 'package:sakkiny/features/home/presentation/views/widget/loading_indicator/list_view_home_loading_indicator.dart';
 import 'package:sakkiny/features/user_property/presentation/manager/user_property_cubit/user_property_cubit.dart';
 import 'package:sakkiny/features/user_property/presentation/manager/user_property_cubit/user_property_states.dart';
 import 'package:sakkiny/features/user_property/presentation/view/widgets/list_view_property_indicator.dart';

@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:sakkiny/core/widgets/custom_divider.dart';
-import 'package:sakkiny/features/home/data/models/home_model/property.dart';
+//import 'package:sakkiny/features/home/data/models/home_model/property.dart';
+import 'package:sakkiny/features/user_property/data/model/user_property_model/property.dart';
 import 'package:sakkiny/features/user_property/presentation/view/widgets/custom_user_property_detailss.dart';
 
 class ListViewUserProperty extends StatelessWidget {

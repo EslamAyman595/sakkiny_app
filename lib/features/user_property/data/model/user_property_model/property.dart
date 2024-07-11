@@ -22,8 +22,8 @@ class Property {
   String? numberOfGuests;
   String? propertyStatus;
   String? address;
-  double? latitude;
-  double? longitude;
+  num? latitude;
+  num? longitude;
   String? customId;
   int? likesCount;
   bool? bannedUser;
@@ -84,8 +84,10 @@ factory Property.fromJson(Map<String, dynamic> json) => Property(
       numberOfGuests: json['numberOfGuests'] as String?,
       propertyStatus: json['propertyStatus'] as String?,
       address: json['address'] as String?,
-      latitude: json['latitude']?.toDouble()?.toInt(), // Handle double to int conversion
-      longitude: json['longitude']?.toDouble()?.toInt(), // Handle double to int conversion
+      // latitude: json['latitude'] as num, // Handle double to int conversion
+      // longitude: json['longitude']?.toDouble()?.toInt(), // Handle double to int conversion
+       latitude: json['latitude'] as num?,
+        longitude: json['longitude'] as num?,
       customId: json['customId'] as String?,
       likesCount: json['likesCount'] as int?,
       bannedUser: json['bannedUser'] as bool?,
